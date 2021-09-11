@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        p{
+            font-size: 50px;
+        }
+        button#rbutton{
+            background-color: red;
+            font-size: 50px;
+        }
+        button#gbutton{
+            background-color: green;
+            font-size: 50px;
+        }
+        button#bbutton{
+            background-color: blue;
+            font-size: 50px;
+        }
+        button#obutton{
+            background-color: orange;
+            font-size: 50px;
+        }
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document hello</title>
+
+    <script>
+        function changeColor(textColor){
+            document.getElementById("para1").style.color=textColor;
+        }
+
+    </script>
+</head>
+<body>
+
+
+    <p id="para1">change color of button</p>
+
+    <button id="rbutton" onclick="changeColor('red')">Red</button>
+    <button  id="gbutton"  onclick="changeColor('green')">Green</button>
+    <button id="bbutton" onclick="changeColor('blue')">Blue</button>
+    <button id="obutton" onclick="changeColor('orange')">Orange</button>
+
+</body>
+</html>
